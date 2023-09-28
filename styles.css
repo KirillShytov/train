@@ -1,0 +1,48 @@
+body {
+  font-family: "Martian Mono", monospace;
+  font-family: "Ubuntu", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+header {
+  background-color: black;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.link-logo {
+  font-size: 50px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.logo-letter {
+  color: rgb(144, 49, 49);
+}
+.link-logo:hover .logo-letter {
+  color: rgb(80, 27, 11);
+}
+.link-nav {
+  color: #fff;
+}
+.link-nav:hover {
+  color: brown;
+}
+.navigation,
+.nav-list,
+.list-contact,
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-list {
+  gap: 70px;
+}
+.list-contact {
+  gap: 70px;
+}
