@@ -1,6 +1,9 @@
 body {
   font-family: "Martian Mono", monospace;
+  font-family: "Young Serif", serif;
   font-family: "Ubuntu", sans-serif;
+
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;
@@ -8,8 +11,9 @@ a {
 ul {
   list-style-type: none;
 }
-header {
+.header {
   background-color: black;
+  border-bottom: 1px solid #2f4f4f;
 }
 .container {
   width: 100%;
@@ -45,4 +49,138 @@ header {
 }
 .list-contact {
   gap: 70px;
+}
+
+/* --------------------SECTION-FIRST----------------------- */
+
+.section-first {
+  background-color: black;
+  padding: 160px 200px;
+  max-width: 1440px;
+  position: relative;
+  margin: 0 auto;
+  border-bottom: 1px solid #1e1b1b;
+}
+.section-first .container {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+}
+.title-section-first,
+.subtitle-section-first {
+  color: #fff;
+  font-family: "Martian Mono", sans-serif;
+}
+.title-section-first {
+  font-size: 50px;
+}
+.title-section-first:hover {
+  box-shadow: 37px 114px 146px -13px rgba(255, 255, 255, 0.86);
+}
+.subtitle-section-first {
+  font-size: 20px;
+}
+.section-first-animation {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  right: 150px;
+  bottom: 50px;
+  transition: transform 50ms linear;
+  animation: animate1 2000ms infinite 1000ms;
+}
+@keyframes animate1 {
+  0% {
+    transform: rotate(20deg);
+  }
+
+  50% {
+    transform: rotate(-55deg);
+  }
+
+  100% {
+    transform: rotate(20deg);
+  }
+}
+.section-first-animation:hover {
+  transform: scale(1.3);
+}
+
+.text-animation {
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Young Serif", serif;
+}
+.text-animation-second {
+  font-size: 10px;
+  transform: rotate(45deg);
+}
+
+/* --------------SECTION-SECOND------------------ */
+
+.section-second {
+  background-color: black;
+  padding: 50px;
+}
+.text-start-sect-sec,
+.title-sect-sec {
+  color: #fff;
+}
+.text-start-sect-sec {
+  font-size: 25px;
+}
+.title-sect-sec {
+  font-size: 50px;
+}
+
+.animated-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 25px 30px;
+  overflow: hidden;
+  border: 2px solid;
+  border-bottom-width: 4px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: black;
+  background: rgba(255, 255, 255, 1);
+  transition: color 0.3s, background 0.5s;
+}
+.animated-button:hover {
+  animation: stripes 0.75s infinite linear;
+  background: rgb(90, 89, 105);
+  background: linear-gradient(
+    90deg,
+    rgba(90, 89, 105, 1) 0%,
+    rgba(214, 214, 232, 1) 76%,
+    rgb(176, 176, 182) 87%,
+    rgb(71, 73, 73) 100%
+  );
+  background-size: 10px 10px;
+  color: #ffffff;
+}
+@keyframes stripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 0;
+  }
+}
+
+.wrapper-title_button {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
