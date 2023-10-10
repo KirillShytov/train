@@ -138,7 +138,7 @@ ul {
 
 .section-second {
   background-color: black;
-  padding: 50px 0 100px 0;
+  padding: 50px 0 408px 0;
 }
 .text-start-sect-sec,
 .title-sect-sec {
@@ -149,6 +149,10 @@ ul {
 }
 .title-sect-sec {
   font-size: 50px;
+  z-index: 2;
+}
+.title-sect-sec:hover {
+  color: #411b1b;
 }
 
 .button {
@@ -165,6 +169,7 @@ ul {
   color: black;
   background: rgba(255, 255, 255, 1);
   transition: color 0.3s, background 0.5s;
+  z-index: 1;
 }
 .button:hover {
   animation: stripes 0.75s infinite linear;
@@ -191,5 +196,32 @@ ul {
 .wrapper-title_button {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 85px;
+}
+.section-second {
+  position: relative;
+}
+.icon-cat {
+  fill: #fff;
+  position: absolute;
+  right: 20px;
+  top: 65px;
+}
+.icon-cat-left {
+  fill: #fff;
+  position: absolute;
+  left: 338px;
+  bottom: 139px;
+}
+.icon-cat-left:hover {
+  fill: #411b1b;
+}
+.icon-left {
+  position: absolute;
+  fill: #fff;
+  left: 52px;
+  bottom: -29px;
+}
+.icon-left:hover {
+  fill: #411b1b;
 }
